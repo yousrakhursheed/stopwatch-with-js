@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative Stopwatch</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 via-black to-gray-800 min-h-screen flex items-center justify-center">
+  <div class="relative w-[350px] h-[350px] rounded-full border-[16px] border-gray-700 shadow-xl bg-black flex items-center justify-center">
+    <div id="pulse-bg" class="absolute inset-0 rounded-full animate-ping bg-blue-600 opacity-10"></div>
+    <div class="text-white text-center z-10">
+      <h1 id="display" class="text-4xl font-mono mb-4">00:00:00</h1>
+      <div class="space-x-3">
+        <button onclick="start()" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Start</button>
+        <button onclick="stop()" class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded">Stop</button>
+        <button onclick="reset()" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
